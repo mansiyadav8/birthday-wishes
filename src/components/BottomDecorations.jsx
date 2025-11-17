@@ -3,12 +3,12 @@ import { motion } from "framer-motion";
 
 export default function BottomDecorations() {
   const decorations = [
-    { src: "/star.png", size: 60, left: "2%", message: "you shine brighter than my phone screen" },
-    { src: "/butterfly.png", size: 50, left: "15%", message: "still got butterflies for you" },
-    { src: "/garden.png", size: 70, left: "25%", message: "lets build a garden together" },
-    { src: "/heart.png", size: 55, left: "35%", message: "You’re Love" },
-    { src: "/bike.png", size: 45, left: "45%", message: "engine’s loud, heart louder" },
-    { src: "/light.png", size: 50, left: "60%", message: "You’re just like these calm lights — quietly starting all the happiness around" },
+    { src: "/star.png", size: 60, left: "2%", message: "keep shining" },
+    { src: "/butterfly.png", size: 50, left: "15%", message: "spread your wings and fly" },
+    { src: "/garden.png", size: 70, left: "25%", message: "joy" },
+    { src: "/heart.png", size: 55, left: "35%", message: "Lots of Love" },
+    { src: "/bike.png", size: 45, left: "45%", message: "be a free soul" },
+    { src: "/light.png", size: 50,  left: "60%", message: "You’re just like these calm lights — quietly starting all the happiness around" },
   ];
 
   return (
@@ -23,6 +23,7 @@ export default function BottomDecorations() {
             display: "flex",
             flexDirection: "column",
             alignItems: "center",
+            zIndex: 6
           }}
           whileHover={{ scale: 1.2 }}
         >

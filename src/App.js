@@ -11,29 +11,29 @@ export default function App() {
     const [doorOpen, setDoorOpen] = useState(false);
 
     const handleDoorClick = () => {
-    setDoorOpen(true);
+      setDoorOpen(true);
 
-    const duration = 1.5 * 1000;
-    const animationEnd = Date.now() + duration;
+      const duration = 1.5 * 1000;
+      const animationEnd = Date.now() + duration;
 
-    const interval = setInterval(function () {
-      const timeLeft = animationEnd - Date.now();
+      const interval = setInterval(function () {
+        const timeLeft = animationEnd - Date.now();
 
-      if (timeLeft <= 0) {
-        return clearInterval(interval);
-      }
+        if (timeLeft <= 0) {
+          return clearInterval(interval);
+        }
 
-      const particleCount = 50 * (timeLeft / duration);
-      // randomly spread confetti across screen
-      confetti({
-        particleCount,
-        spread: 90,
-        origin: {
-          x: Math.random(),
-          y: Math.random() - 0.2, // allow some confetti above screen
-        },
-      });
-    }, 200);
+        const particleCount = 50 * (timeLeft / duration);
+        // randomly spread confetti across screen
+        confetti({
+          particleCount,
+          spread: 90,
+          origin: {
+            x: Math.random(),
+            y: Math.random() - 0.2, // allow some confetti above screen
+          },
+        });
+      }, 200);
   };
 
   return(

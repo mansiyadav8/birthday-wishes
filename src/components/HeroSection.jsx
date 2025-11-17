@@ -6,7 +6,7 @@ export default function HeroSection(){
     return(
         <div className="birthday-wishes">
             <div style={{fontWeight:"bold",textAlign: "center"}}>HAPPY</div>
-            <div style={{fontFamily:"Allura",textAlign: "center", fontSize:"4rem"}}>birthday prafulliya</div>
+            <div style={{fontFamily:"Allura",textAlign: "center", fontSize:"4rem"}}>birthday</div>
             <div style={{fontFamily:"Megrim",textAlign: "center"}}>Wish you all the best</div>
             <div
             style={{
